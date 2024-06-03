@@ -1,27 +1,6 @@
-# Automated Readability Index
-## Description
-The automated readability index is a readability test for texts by analyzing their characters, words, and sentences. And this shell script is to do the same. 
+I used to write code in many languages, like Python, C, and C++, but shell scripting was a new experience for me. On one hand, I was a little bit nervous because I didn't remember commands in scripting very well. On the other hand, writing code in a new way excited me very much.
 
-*Automated Readability Index formula:* 
-
-4.71 x (characters/words) + 0.5 x (words/sentences) – 21.43.
-## Requirements
-- Unix environment
-- Bash shell
-## Basic Working
-- Provide a provision to enter a file name.
-- Check if the file already exists in the directory for further procedures.
-- Calculating sentence count, word count, and character count using **`wc`**.
-- Applying these counts to the automated readability index equation to find the index value.
-- Used **"case"** for getting the corresponding grade for the value obtained through the calculation of automated readability index and showed the output.
-## Challenges faced and Solutions
-
-- Many issues were faced during the development process. One important challenge was accurately counting the number of sentences due to the limitations of **`wc -l`**, which only counts newlines.This was overcome by using **`grep -o`** to get sentences wich end with '. ! ?'
-
-- Additionally, faced problem while preparing condition check. To resolve this,I referred shell scripting lecture notes prepared by me on the previous class .From this i got the idea of providing condition to the case.
-
-- Furthermore ,referred man wc for getting more idea and to find difference in **`wc -l`**,**`wc -w`**,**`wc -m`**.
+I started the process by googling about what is an automated readability index is and obtained idea about it. Through this, I developed some logic to write the code. I draw a rough sketch of the code in my mind to understand the flow of my code and to check if it is really going to work out. In this phase, I was able to understand some problems that could arise at the time of execution and what changes needed to be made. The main advantage of this was that I got the idea to use case statement inside my code. Finally, I started writing my code. Many issues were faced during the development process. One important challenge was accurately counting the number of sentences due to the limitations of wc-l, which only counts newlines. This was overcome by using grep -o to get sentences that end with '. ! ?'. Additionally, I faced problems while preparing the condition check. To resolve this, I referred  to the shell scripting lecture notes prepared by me on the previous class. From this, I got the idea of providing conditions to the case. Furthermore, referred man wc for getting more idea and to find difference in wc -l,wc -w, wc -m . Through this research and references, I was able to write my first shell script.
 
 
-## Conclusion
-In conclusion, the process of writing this code helps me get familiar with shell scripting and understand several commands.Moreover, it provides a proper awareness of the error correction process when writing code.
+In conclusion, the process of writing this code helped me get familiar with shell scripting and understand several commands. Moreover, it provides a proper awareness of the error correction process when writing code. I obtained the courage to write more shell scripts after completing this work. 
